@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator </title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid gray;
+            height: 100vh;
+            background-color: gray;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 2px solid rgb(25, 164, 206);
+            border-radius: 15px;
+            min-width: 450px;
+            min-height: 450px;
+            background-image: linear-gradient(230deg, rgb(10, 112, 143), rgb(155, 67, 174));
+            flex-wrap: wrap;
+        }
+        button{
+            margin: 15px -70px 2px 0;
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid gray;
+            border-radius: 15px;
+        }
+        label{
+            font-size: 20px;
+            color: white;
+        }
+        input,#result{
+            width: 180px;
+            height: 30px;
+            border: 0;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        #result{
+            margin-top: 15px;
+            font-weight: bolder;
+            font-size: x-large;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form>
+            <h1>Calculate BMI</h1>
+
+            <p>
+                <label>Enter your weight in KG : </label>
+                <input type="text" id="weight">
+            </p>
+            <p>
+                <label>Enter your heigt in CM :</label>
+                <input type="text" id="height">
+            </p>
+            <button>calculate</button>
+            <div id="result"></div>
+        
+            
+        </form>
+        <div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
